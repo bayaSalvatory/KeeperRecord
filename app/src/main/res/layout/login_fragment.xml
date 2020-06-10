@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <FrameLayout xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/window_bg"
+        android:orientation="vertical"
+        tools:context=".login.LoginFragment">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/content_description_bg"
+            android:scaleType="centerCrop"
+            android:src="@drawable/vault_outline" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:gravity="center"
+                android:orientation="vertical">
+                <!-- Logo View-->
+                <ImageView
+                    android:layout_width="300dp"
+                    android:layout_height="80dp"
+                    android:layout_marginTop="25dp"
+                    android:contentDescription="@string/content_description_logo"
+                    android:src="@drawable/login_black_no_padding" />
+
+                <!-- Screen Name-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="30dp"
+                    android:text="@string/login"
+                    android:textColor="@android:color/white"
+                    android:textSize="40sp" />
+
+                <com.keeper.keeperrecord.widget.InputView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="30dp" />
+
+                <com.keeper.keeperrecord.widget.InputView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="30dp" />
+
+                <Button
+                    style="@style/buttonStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/yellow"
+                    android:text="@string/login" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginBottom="30dp"
+                    android:text="@string/create_account"
+                    android:textSize="@dimen/login_text_size" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/need_help"
+                    android:textColor="@color/yellow"
+                    android:textSize="@dimen/login_text_size" />
+
+                <Button
+                    style="@style/buttonStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="35dp"
+                    android:layout_marginBottom="35dp"
+                    android:background="@drawable/bg_yellow_stroke"
+                    android:text="@string/use_sso"
+                    android:textColor="@color/yellow" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="25dp"
+                    android:text="@string/copyright" />
+            </LinearLayout>
+        </ScrollView>
+    </FrameLayout>
+</layout>

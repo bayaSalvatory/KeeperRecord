@@ -1,3 +1,11 @@
 <resources>
-  <string name="app_name">KeeperRecord</string>
+    <string name="app_name">KeeperRecord</string>
+    <string name="email">Enter Email</string>
+    <string name="content_description_bg">Background</string>
+    <string name="login">Login</string>
+    <string name="need_help">Need Help?</string>
+    <string name="use_sso">Use Enterprise SSO Login</string>
+    <string name="copyright"><font color='#888888'> \u00A9 2020 Keeper Security, Inc.</font></string>
+    <string name="content_description_logo">logo</string>
+    <string name="create_account"><font color='#FFFFFF'>Don\'t have an account? </font> <font color='#FFC700'>Create</font></string>
 </resources>
