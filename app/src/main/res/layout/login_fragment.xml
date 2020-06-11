@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout xmlns:android="http://schemas.android.com/apk/res/android">
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <FrameLayout xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
@@ -45,16 +46,25 @@
                     android:textSize="40sp" />
 
                 <com.keeper.keeperrecord.widget.InputView
+                    android:id="@+id/email"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="30dp" />
+                    android:layout_marginBottom="30dp"
+                    app:hint='@{@string/email_hint}'
+                    app:inputType='@{"email"}'
+                    app:title='@{@string/email}' />
 
                 <com.keeper.keeperrecord.widget.InputView
+                    android:id="@+id/password"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="30dp" />
+                    android:layout_marginBottom="30dp"
+                    app:hint='@{@string/password_hint}'
+                    app:inputType='@{"password"}'
+                    app:title='@{@string/master_password}' />
 
                 <Button
+                    android:id="@+id/login_btn"
                     style="@style/buttonStyle"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -93,5 +103,18 @@
                     android:text="@string/copyright" />
             </LinearLayout>
         </ScrollView>
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            app:visibleOrGone="@{showProgress}" />
     </FrameLayout>
+
+    <data>
+
+        <variable
+            name="showProgress"
+            type="Boolean" />
+    </data>
 </layout>

@@ -53,5 +53,4 @@ dependencies {
     implementation Dependencies.Koin.koinViewModel
     implementation Dependencies.Koin.koin
     implementation Dependencies.Koin.koinScope
-
 }
